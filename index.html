@@ -268,10 +268,13 @@ https://www.tooplate.com/view/2117-infinite-loop
             </div>
             
             <div class="col-sm-12 col-md-6">
-              <form action="mailto:Support@autologicengineering.com.au" method="POST" enctype="text/plain">
-                <input id="name" name="Name:" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="Email:" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="Message:" rows="8" placeholder="Message" class="tm-input" required></textarea>
+              <form action="https://formsubmit.co/Support@autologicengineering.com.au" method="POST">
+                <input type="hidden" name="_subject" value="New enquiry from Autologic Engineering website" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
+                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
                 <button type="submit" class="btn tm-btn-submit">Send Email</button>
               </form>
             </div>
