@@ -18,12 +18,24 @@ https://www.tooplate.com/view/2117-infinite-loop
 -->
 
   <style>
-.tm-brand-logo { display:block; width:210px; height:auto; }
-@media (min-width:768px) and (max-width:1199px) {
-  .navbar-expand-md .navbar-nav .nav-link { padding-left:10px; padding-right:10px; }
+/* Keep the logo and navigation together on a clean white header. */
+body { padding-top:82px; }
+#tmNav { top:0; min-height:82px; padding:8px 16px; background:#fff; border-bottom:1px solid #e7edf4; }
+#tmNav .navbar-brand { display:block; margin-right:24px; padding:0; line-height:1; }
+.tm-brand-logo { display:block; width:180px; max-width:100%; height:auto; }
+#tmNav .tm-nav-link { color:#163c64; font-size:1rem; padding:12px 18px; border-radius:4px; }
+#tmNav .tm-nav-link:hover,
+#tmNav .tm-nav-link.current { color:#0075d5; background:#eef6fd; }
+#tmNav .navbar-toggler { border-color:#bfd0e1; }
+#tmNav .navbar-toggler-icon { color:#163c64; }
+#infinite { height:calc(100vh - 82px); }
+@media (max-width:991px) {
+  #tmNav .navbar-collapse { background:#fff; padding:12px 0; }
+  #tmNav .navbar-nav { max-width:none; text-align:left; }
+  #tmNav .tm-nav-link { padding:12px 16px; }
 }
 @media (max-width:767px) {
-  .tm-brand-logo { width:180px; }
+  .tm-brand-logo { width:160px; }
 }
 </style>
 </head>
@@ -31,7 +43,7 @@ https://www.tooplate.com/view/2117-infinite-loop
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+      <nav class="navbar navbar-expand-lg tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
               <a href="#infinite" class="navbar-brand"><img src="img/autologic-logo-7b-bright-blue.png" class="tm-brand-logo" width="2079" height="756" alt="Autologic Engineering"></a>
